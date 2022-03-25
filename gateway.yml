@@ -8,10 +8,15 @@ spring:
           enable: false
           lower-case-service-id: true
       routes:
-        - id: service
-          uri: lb://service
+        - id: movie-service
+          uri: lb://movie-service
           predicates:
-            - Path=/games/**     #CHANGE FOR THE NAME OF THE MAIN SERVICE
+            - Path=/movies/**
+        - id: catalog-service
+          uri: lb://catalog-service
+          predicates:
+            - Path=/catalog/**
+        
 
 server:
   port: 8080
