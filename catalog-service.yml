@@ -3,12 +3,10 @@ server:
 spring:
   data:
       mongodb:
-        user: 
-        password: 
         uri: mongodb://host:27017/db
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-      fetchRegistry: true
+      fetchRegistry: false
       registerWithEureka: true
