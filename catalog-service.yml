@@ -1,14 +1,54 @@
-server:
-  port: 8098
+# server:
+#   port: 8098
+# spring:
+#   data:
+#       mongodb:
+#         uri: mongodb://host:27017/db
+# eureka:
+#   client:
+#     service-url:
+#       defaultZone: http://localhost:8761/eureka
+#       fetchRegistry: false
+#       registerWithEureka: true
+#   instance:
+#     preferIpAddress: true
+
 spring:
+  application:
+    name: series-service
   data:
-      mongodb:
-        uri: mongodb://host:27017/db
+    mongodb:
+#      host: localhost
+#      port: 27017
+#      database: SeriesDB
+      authentication-database: admin
+      uri: mongodb://localhost:27017/SeriesDB
+      database=: SeriesDB
+      repositories:
+        enabled: true
+
+
+#spring.data.mongodb.database=TestDatabase
+#spring.data.mongodb.host=localhost
+#spring.data.mongodb.port=27017
+#  datasource:
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/movieservicieDB?createDatabaseIfNotExist=true
+#    username: root
+#    password: Nutriarosa7
+#  jpa:
+#    deferDatasourceInitialization: true
+#    hibernate:
+#      ddlAuto: update
+#spring.data.mongodb.uri=mongodb://localhost:27017/mongoDemo
+server:
+  port: 8071
+
 eureka:
   client:
-    service-url:
+    fetchRegistry: false
+    registerWithEureka: true
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka
-      fetchRegistry: false
-      registerWithEureka: true
   instance:
     preferIpAddress: true
