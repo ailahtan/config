@@ -2,10 +2,10 @@ server:
   port: 8098
 spring:
   data:
-    mongodb:
-      database: catalogoFinal
-      port: 27017
-      host: localhost
+      mongodb:
+        user: 
+        password: 
+        uri: mongodb://host:27017/db
 eureka:
   client:
     service-url:
