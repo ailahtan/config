@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      database: movie
+      database: moviesFinal
       port: 27017
       host: localhost
 eureka:
