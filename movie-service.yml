@@ -1,11 +1,17 @@
 server:
   port: 8099
 spring:
-  data:
-    mongodb:
-      database: moviesFinal
-      port: 27017
-      host: localhost
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/movies-service
+    username: root
+    password: Holamundo
 eureka:
   client:
     service-url:
