@@ -13,23 +13,16 @@
 #   instance:
 #     preferIpAddress: true
 
-# spring:
-#   application:
-#     name: catalog-service
-#   data:
-#     mongodb:
-#       authentication-database: admin
-#       uri: mongodb://localhost:27017/SeriesDB
-#       database=: SeriesDB
-#       repositories:
-#         enabled: true
-
 spring:
   application:
     name: catalog-service
   data:
-      mongodb:
-        uri: mongodb://host:27017/perronas
+    mongodb:
+      authentication-database: admin
+      uri: mongodb://localhost:27017/SeriesDB
+      repositories:
+        enabled: true
+
 
 server:
   port: 8071
