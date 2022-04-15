@@ -1,1 +1,22 @@
-// properties
+spring:
+  application:
+    name: serie-service
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: mongodb://localhost:27017/SeriesFinalDB
+      repositories:
+        enabled: true
+
+
+server:
+  port: 8071
+
+eureka:
+  client:
+    fetchRegistry: false
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
