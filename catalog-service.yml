@@ -19,7 +19,7 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      uri: mongodb://localhost:27017/SeriesDB
+      uri: mongodb://localhost:27017/CatalogFinalDB
       repositories:
         enabled: true
 
