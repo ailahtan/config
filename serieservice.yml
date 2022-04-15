@@ -1,6 +1,6 @@
 spring:
   application:
-    name: serie-service
+    name: serieservice
   data:
     mongodb:
       authentication-database: admin
