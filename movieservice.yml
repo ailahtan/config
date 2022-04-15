@@ -14,9 +14,18 @@ spring:
     url: jdbc:mysql://localhost:3306/movieservice
     username: root
     password: Holamundo
+# eureka:
+#   client:
+#     service-url:
+#       defaultZone: http://localhost:8761/eureka
+#       fetchRegistry: true
+#       registerWithEureka: true
+
 eureka:
   client:
-    service-url:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka
-      fetchRegistry: true
-      registerWithEureka: true
+  instance:
+    preferIpAddress: true
