@@ -15,7 +15,7 @@
 
 spring:
   application:
-    name: catalog-service
+    name: catalogservice
   data:
     mongodb:
       authentication-database: admin
