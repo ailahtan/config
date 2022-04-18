@@ -1,25 +1,15 @@
-# server:
-#   port: 8099
-# spring:
-#   application:
-#     name: movieservice
-#   jpa:
-#     hibernate:
-#       ddl-auto: update
-#     properties:
-#       hibernate:
-#         dialect: org.hibernate.dialect.MySQL5Dialect
-#     show-sql: true
-#   datasource:
-#     url: jdbc:mysql://localhost:3306/movieservice
-#     username: root
-#     password: Holamundo
-
 server:
   port: 8099
 spring:
   application:
     name: movieservice
+  
+  rabbitmq: #new
+    username: guest #new
+    password: guest #new
+    host: localhost #new
+    port: 5672 #new
+    
   datasource:
     url : jdbc:mysql://localhost:3306/movieservice?createDatabaseIfNotExist=true
     username : root
@@ -35,19 +25,15 @@ spring:
       hibernate:
         dialect : org.hibernate.dialect.MySQL5Dialect
   
-
-
-
-# eureka:
-#   client:
-#     service-url:
-#       defaultZone: http://localhost:8761/eureka
-#       fetchRegistry: true
-#       registerWithEureka: true
+queue: #new
+  movie: #new
+    name: MoviesQueue #new
+    
+message: registro up #new
 
 eureka:
   client:
-    fetchRegistry: true
+    fetchRegistry: false
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
