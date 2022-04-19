@@ -3,12 +3,6 @@ server:
 spring:
   application:
     name: movieservice
-  
-  rabbitmq: #new
-    username: guest #new
-    password: guest #new
-    host: localhost #new
-    port: 5672 #new
     
   datasource:
     url : jdbc:mysql://localhost:3306/movieservice?createDatabaseIfNotExist=true
@@ -24,7 +18,12 @@ spring:
     properties:
       hibernate:
         dialect : org.hibernate.dialect.MySQL5Dialect
-  
+        
+  rabbitmq: #new
+    username: guest #new
+    password: guest #new
+    host: localhost #new
+    port: 5672 #new  
 queue: #new
   movie: #new
     name: MoviesQueue #new
