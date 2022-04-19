@@ -31,7 +31,7 @@ queue:
   movie: 
     name: MoviesQueue 
     
-message: registro up #new
+# message: registro up #new
 
 eureka:
   client:
