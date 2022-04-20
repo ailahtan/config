@@ -24,8 +24,7 @@ queue:
   movie:
     name: MovieQueue
  
-resilience4j:
-  circuitbreaker:
+resilience4j.circuitbreaker:
     instances:
         registerHealthIndicator: true
         slidingWindowSize: 10
