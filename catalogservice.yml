@@ -26,6 +26,7 @@ queue:
  
 resilience4j.circuitbreaker:
     instances:
+      errorcito:
         registerHealthIndicator: true
         slidingWindowSize: 10
         permittedNumberOfCallsInHalfOpenState: 3
