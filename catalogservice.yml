@@ -38,9 +38,10 @@ resilience4j.circuitbreaker:
  retry:
     instances:
       catalog:
-        maxAttempts: 3
         waitDuration: 1000
-        retryExceptions[0]: feign.FeignException$InternalServerError
+        maxAttempts: 3
+        retryExceptions:
+          - feign.FeignException$InternalServerError
         
         
 server:
