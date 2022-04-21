@@ -35,7 +35,14 @@ resilience4j.circuitbreaker:
         waitDurationInOpenState: 5s
         failureRateThreshold: 50
         eventConsumerBufferSize: 10
-
+ retry:
+    instances:
+      circuitGetCatalogByGenre:
+        maxAttempts: 3
+        waitDuration: 1000
+        retryExceptions[0]: feign.FeignException$InternalServerError
+        
+        
 server:
   port: 8071
 
