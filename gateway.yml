@@ -21,6 +21,10 @@ spring:
           predicates:
             - Path=/movies/**
 
+
+
+      default-filters:
+        - OIDCTokenRelay
 #security que puede romper todo y lloro
   security:
      oauth2:
