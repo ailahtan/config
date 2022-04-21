@@ -23,8 +23,8 @@ spring:
 
 
 
-      default-filters:
-        - OIDCTokenRelay
+#       default-filters:
+#         - OIDCTokenRelay
 #security que puede romper todo y lloro
 #   security:
 #      oauth2:
