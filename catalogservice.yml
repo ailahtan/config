@@ -37,7 +37,7 @@ resilience4j.circuitbreaker:
         eventConsumerBufferSize: 10
  retry:
     instances:
-      circuitGetCatalogByGenre:
+      catalog:
         maxAttempts: 3
         waitDuration: 1000
         retryExceptions[0]: feign.FeignException$InternalServerError
