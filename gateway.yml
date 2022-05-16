@@ -34,8 +34,8 @@ spring:
 #             issuer-uri: https://accounts.google.com
 #          registration:
 #            google:
-#              client-id: 725280996574-8o0e5n5ah1phca3t5l04gcebbnq342o0.apps.googleusercontent.com
-#              client-secret: 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
+#              client-id: poruncaminitoyotefuiabuscar0.apps.googleusercontent.com
+#              client-secret: muylejoscuandoteencontreee
 #              scope: openid
 #              redirect_uri: http://localhost:8080/login/oauth2/code/google
 
